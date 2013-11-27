@@ -62,7 +62,9 @@
 我们发现，在Firefox浏览器下，alert: Hello World是最先执行的，也就是说，在同一个script标签中，document.write方式并没有
 起到异步载入的功能。
 
+关于其他浏览器的执行过程，大家可以自行测试。
 
+document.write方式总结：**document.write解决不了JS异步载入的问题**
 
 
 
