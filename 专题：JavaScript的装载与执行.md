@@ -46,7 +46,8 @@
 	<li>body标签中的H1标签显示出来</li>
 <ol>
 
-
+我们发现，在Chrome浏览器下，对于在同一个script标签的JavaScript代码来说，确实是异步载入了，但对于整个页面来说，这个还是
+会阻塞。第二个script标签中代码的执行晚于alert.js代码的执行，<h1>Hello World</h1>标签的渲染也是最后完成。
 
 
 
