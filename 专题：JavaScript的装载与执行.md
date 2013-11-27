@@ -35,3 +35,20 @@
 	    <h1>Hello World</h1>
 	</body>
 	</html>
+
+**Chrome浏览器执行过程：**
+
+<ol>
+	<li>alert: loadScript() exit...</li>
+	<li>alert: loadScript() finished</li>
+	<li>alert: Hello World</li>
+	<li>alert: the second script tag</li>
+	<li>body标签中的H1标签显示出来</li>
+<ol>
+
+
+
+
+
+
+
