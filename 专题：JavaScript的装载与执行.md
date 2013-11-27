@@ -36,7 +36,7 @@
 	</body>
 	</html>
 
-**Chrome浏览器执行过程：**
+**Chrome31.0.1650.57浏览器执行过程：**
 
 <ol>
 	<li>alert: loadScript() exit...</li>
@@ -49,7 +49,7 @@
 我们发现，在Chrome浏览器下，对于在同一个script标签的JavaScript代码来说，alert.js确实是异步载入了，但对于整个页面来说，
 这个还是会阻塞。第二个script标签中代码的执行晚于alert.js代码的执行，\<h1\>Hello World\</h1\>标签的渲染也是最后完成。
 
-**Firefox浏览器执行过程：**
+**Firefox21.0浏览器执行过程：**
 
 <ol>
 	<li>alert: Hello World</li>
