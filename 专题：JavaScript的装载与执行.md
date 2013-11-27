@@ -7,3 +7,31 @@
 
 ### 如何异步载入JavaScript？
 
+**document.write方式**
+
+> alert.js
+
+	alert("Hello World");
+
+> test1.html
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+	    <script type="text/javascript">
+	        function loadScript(scriptFileName) {
+	            document.write('\<script type="text/javascript" src="' + scriptFileName + '"\>\</script\>');
+	            alert("loadScript() exit...");
+	        }
+	        var scriptFileName = 'alert.js';
+	        loadScript(scriptFileName);
+	        alert("loadScript() finished");
+	    </script>
+	    <script type="text/javascript">
+	        alert('the second script tag');
+	    </script>
+	</head>
+	<body>
+	    <h1>Hello World</h1>
+	</body>
+	</html>
